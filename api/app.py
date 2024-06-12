@@ -12,6 +12,7 @@ app = Flask(__name__)
 # Set the secret key to enable session handling
 app.secret_key = '7979u9'  # Replace with a secure key
 
+
 # Define the path to save uploaded images
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -139,3 +140,4 @@ def cleanup(exception=None):
 
 if __name__ == '__main__':
     app.run(debug=True)
+    
